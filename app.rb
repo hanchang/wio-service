@@ -6,7 +6,7 @@ require 'json'
 class WIO < Sinatra::Application
 end
 
-$cache = Memcached.new("192.168.1.232:11311")
+ENV['RACK_ENV'] == "production" ? $cache = Memcached.new() : $cache = Memcached.new("192.168.1.232:11311") 
 
 get '/' do
     "Welcome to the WIO API!"
