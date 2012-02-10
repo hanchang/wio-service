@@ -1,0 +1,5 @@
+Quick demonstration of using Sinatra to create a RESTful service.
+
+Presentation is shamelessly taken from impress.js - check it out, quality stuff.
+
+Live version is running on http://wio-service.herokuapp.com.
